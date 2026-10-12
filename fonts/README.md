@@ -1,1 +1,1 @@
-Literata and Source Sans 3 are licensed under the SIL Open Font License 1.1 (via Fontsource).
+Newsreader is licensed under the SIL Open Font License 1.1 (via Fontsource).

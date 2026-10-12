@@ -3,163 +3,202 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Forty Days to Home · Interiors Diary</title>
-<meta name="description" content="A homeowner's honest account of getting a 2 BHK's interiors done in 40 days at Aparna Zenon, Hyderabad: what I'd heard, what happened, what I valued, what I can't judge, and what I'd look for next time.">
+<title>Forty Days to Home | Interiors Diary</title>
+<meta name="description" content="A homeowner’s honest account of getting a 2 BHK’s interiors done in 40 days at Aparna Zenon, Hyderabad: what I’d heard, what happened, what I valued, what I can’t judge, and what I’d look for next time.">
 <meta name="author" content="Rudra">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Interiors Diary">
-<meta property="og:title" content="Getting my flat's interiors done in 40 days, without the hassle">
-<meta property="og:description" content="An honest homeowner's account from Aparna Zenon, Hyderabad: what went well, what I can't judge, and what I'd look for next time.">
+<meta property="og:title" content="Getting my flat’s interiors done in 40 days, without the hassle">
+<meta property="og:description" content="An honest homeowner’s account from Aparna Zenon, Hyderabad: what went well, what I can’t judge, and what I’d look for next time.">
 <meta property="og:image" content="https://rudraprasadmaisur.github.io/Interiors-Diary/og.jpg">
 <meta property="og:url" content="https://rudraprasadmaisur.github.io/Interiors-Diary/">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F3F2EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161514" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="alternate icon" href="favicon.ico" sizes="16x16 32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preload" href="fonts/literata-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face{font-family:"Literata";font-style:normal;font-weight:200 900;font-display:swap;src:url(fonts/literata-latin-opsz-normal.woff2) format("woff2")}
-@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:200 900;font-display:swap;src:url(fonts/source-sans-3-latin-wght-normal.woff2) format("woff2")}
+@font-face{font-family:"Newsreader";font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/newsreader-latin-opsz-normal.woff2) format("woff2")}
+@font-face{font-family:"Newsreader";font-style:italic;font-weight:200 800;font-display:swap;src:url(fonts/newsreader-latin-opsz-italic.woff2) format("woff2")}
 
-/* A plain personal essay: one readable column, photos slightly wider, nothing decorative. */
+/* Editorial interiors journal: stone paper, one serif family at two optical sizes,
+   photographs threaded through the story at a wider measure than the text. */
 :root{
-  --bg:#FFFFFF;
-  --ink:#1E2226;
-  --ink-2:#3B4148;
-  --muted:#646B73;
-  --rule:#E3E6E9;
-  --soft:#F5F6F7;
-  --accent:#2C5E52;
-  --text:"Literata",Georgia,"Times New Roman",serif;
-  --ui:"Source Sans 3","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --paper:#F3F2EF;     /* stone, like the flat's matte walls */
+  --ink:#1C1B19;
+  --ink-2:#3F3C37;
+  --muted:#7C766D;     /* taupe of the wardrobe laminate */
+  --rule:#DCD8D1;
+  --bronze:#7A6650;    /* brass fittings, darkened for text */
+  --band:#262420;
+  --band-ink:#ECE9E3;
+  --band-muted:#A9A398;
+  --serif:"Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){
-  :root{--bg:#141618; --ink:#E6E8EA; --ink-2:#C9CDD2; --muted:#9AA1A9; --rule:#2A2E32; --soft:#1C1F22; --accent:#8CC4B3; color-scheme:dark}
+  :root{
+    --paper:#161514; --ink:#ECE9E4; --ink-2:#CAC5BD; --muted:#9C958B; --rule:#2F2D2A;
+    --bronze:#C9B496; --band:#211F1C; --band-ink:#ECE9E4; --band-muted:#9C958B; color-scheme:dark;
+  }
 }
+
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--text); font-size:1.1875rem; line-height:1.7;
-  padding-inline:20px; padding-block:0 48px; font-optical-sizing:auto; -webkit-font-smoothing:antialiased}
-img,video{max-width:100%; display:block}
-a{color:var(--accent); text-decoration-thickness:1px; text-underline-offset:3px}
-:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:3px}
-h1,h2,h3{text-wrap:balance; margin:0; font-family:var(--text); color:var(--ink)}
-p,ul,ol{margin:0}
+body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--serif); font-size:1.25rem; line-height:1.68;
+  font-optical-sizing:auto; font-kerning:normal; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  padding-inline:clamp(20px,4vw,48px); padding-block:0}
+img,video{display:block; max-width:100%}
+p,ul,ol,dl,dd,figure,h1,h2,h3{margin:0}
+a{color:inherit; text-decoration-color:var(--bronze); text-decoration-thickness:1px; text-underline-offset:.18em}
+a:hover{color:var(--bronze)}
+:focus-visible{outline:2px solid var(--bronze); outline-offset:3px; border-radius:2px}
+h1,h2,h3{font-weight:400; text-wrap:balance}
 
-.top{max-width:42rem; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:12px; padding-block:20px; border-bottom:1px solid var(--rule); font-family:var(--ui); font-size:.95rem}
-.top a{color:var(--ink); text-decoration:none}
-.top .site{font-weight:700; letter-spacing:.01em}
-.top .site span{color:var(--muted); font-weight:400}
-.top .ask{color:var(--accent); font-weight:600}
+/* masthead */
+.mast{max-width:76rem; margin:0 auto; display:flex; justify-content:space-between; align-items:baseline; gap:16px; padding-block:28px 0; font-size:1.02rem}
+.mast .name{font-weight:560; letter-spacing:.005em; text-decoration:none}
+.mast .name span{color:var(--muted); font-weight:400; font-style:italic}
+.mast .write{color:var(--ink-2)}
 
-article{max-width:42rem; margin:0 auto}
-.head{padding-block:48px 28px; display:flex; flex-direction:column; gap:18px}
-h1{font-size:clamp(2rem,4.8vw,2.75rem); font-weight:650; line-height:1.18; letter-spacing:-.01em}
-.dek{font-size:1.25rem; line-height:1.6; color:var(--ink-2)}
-.meta{font-family:var(--ui); font-size:.95rem; color:var(--muted)}
-.meta b{color:var(--ink); font-weight:600}
+/* hero */
+.hero{max-width:76rem; margin:0 auto; display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); gap:clamp(32px,6vw,96px); align-items:end; padding-block:clamp(48px,8vw,112px) 0}
+.hero-text{display:flex; flex-direction:column; gap:28px; padding-bottom:8px; min-width:0}
+h1{font-size:clamp(2.6rem,5.2vw,4.5rem); line-height:1.04; letter-spacing:-.022em; font-weight:380}
+.dek{font-size:1.32rem; line-height:1.55; color:var(--ink-2); max-width:30rem}
+.byline{font-size:1rem; line-height:1.5; color:var(--muted)}
+.byline b{color:var(--ink); font-weight:560}
+.hero-img img{width:100%; aspect-ratio:3/4; object-fit:cover}
+.hero-img figcaption{margin-top:12px}
 
-.film{margin:8px 0 0; display:flex; flex-direction:column; align-items:center; gap:10px}
-.film video{width:100%; max-width:360px; aspect-ratio:9/16; object-fit:cover; border-radius:6px; background:#000}
-figcaption{font-family:var(--ui); font-size:.9rem; color:var(--muted); text-align:center}
+/* article column and wider figure measure */
+.story{max-width:36rem; margin:0 auto; padding-block:clamp(56px,8vw,104px) 0}
+.story > * + *{margin-top:1.3em}
+.story h2{font-size:clamp(1.9rem,3.3vw,2.5rem); line-height:1.12; letter-spacing:-.015em; margin-top:2.6em}
+.story h2 + *{margin-top:.9em}
+.story p{hanging-punctuation:first}
+.story strong{font-weight:600}
+figcaption{font-size:.95rem; line-height:1.45; font-style:italic; color:var(--muted)}
 
-.body{display:flex; flex-direction:column; gap:22px; padding-top:20px}
-.body h2{font-size:1.65rem; font-weight:650; line-height:1.25; margin-top:34px}
-.body p{color:var(--ink)}
-.body p b, .body li b{font-weight:650}
-.body ul,.body ol{padding-left:1.4rem; display:flex; flex-direction:column; gap:12px}
-.body li{padding-left:.25rem}
-.body li::marker{color:var(--muted)}
+.wide{width:min(64rem, calc(100vw - 2*clamp(20px,4vw,48px) - 16px)); position:relative; left:50%; transform:translateX(-50%); margin-block:2.4em}
+.pair,.trio{display:grid; gap:clamp(12px,1.6vw,20px)}
+.pair{grid-template-columns:repeat(2,minmax(0,1fr))}
+.trio{grid-template-columns:repeat(3,minmax(0,1fr))}
+.pair img,.trio img{width:100%; aspect-ratio:3/4; object-fit:cover}
+.wide figcaption{margin-top:12px; max-width:36rem}
 
-.glance{border:1px solid var(--rule); border-radius:6px; overflow:hidden; font-family:var(--ui); font-size:1rem}
-.glance h3{font-family:var(--ui); font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); background:var(--soft); padding:10px 16px; border-bottom:1px solid var(--rule)}
-.glance dl{margin:0; display:grid; grid-template-columns:minmax(0,10rem) minmax(0,1fr)}
-.glance dt,.glance dd{margin:0; padding:10px 16px; border-bottom:1px solid var(--rule)}
-.glance dt{color:var(--muted)}
-.glance dd{color:var(--ink); font-weight:600}
-.glance dl > :nth-last-child(-n+2){border-bottom:0}
+.facts{display:grid; grid-template-columns:auto minmax(0,1fr); column-gap:0; border-top:1px solid var(--rule); font-size:1.05rem; line-height:1.5}
+.facts dt,.facts dd{padding-block:12px; border-bottom:1px solid var(--rule)}
+.facts dt{color:var(--muted); font-style:italic; padding-right:28px}
 
-.note{background:var(--soft); border-left:3px solid var(--accent); padding:16px 18px; border-radius:0 6px 6px 0}
+.heard{list-style:none; padding:0; border-top:1px solid var(--rule)}
+.heard li{padding-block:14px; border-bottom:1px solid var(--rule); color:var(--ink-2)}
 
-.photos{max-width:52rem; margin:28px auto 0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px}
-.photos figure{margin:0; display:flex; flex-direction:column; gap:6px}
-.photos button{all:unset; cursor:zoom-in; display:block; border-radius:6px; overflow:hidden; background:var(--soft)}
-.photos button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
-.photos img{width:100%; aspect-ratio:3/4; object-fit:cover}
-.photos figcaption{text-align:left; font-size:.88rem}
-dialog{border:0; padding:0; background:transparent; max-width:min(92vw,600px)}
-dialog::backdrop{background:rgba(10,12,14,.88)}
-dialog img{max-height:82vh; margin:0 auto; border-radius:6px}
-dialog form{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-top:10px; font-family:var(--ui); color:#fff; font-size:.95rem}
-dialog button{font:600 .9rem var(--ui); background:#fff; color:#111; border:0; border-radius:4px; padding:7px 14px; cursor:pointer}
+.film{display:flex; flex-direction:column; align-items:center; gap:12px; margin-block:2.4em}
+.film video{width:100%; max-width:22rem; aspect-ratio:9/16; object-fit:cover; background:#000}
+.film figcaption{text-align:center}
 
-.contact{border:1px solid var(--rule); border-radius:6px; padding:22px 20px; display:flex; flex-direction:column; gap:14px}
-.mail{display:flex; flex-wrap:wrap; gap:10px; align-items:center; font-family:var(--ui)}
-.addr{font-size:1.1rem; font-weight:600; padding:9px 14px; background:var(--soft); border-radius:4px; user-select:all; overflow-wrap:anywhere; min-width:0}
-.btn{font:600 .95rem var(--ui); padding:10px 16px; border-radius:4px; cursor:pointer; text-decoration:none; border:1px solid var(--accent)}
-.btn.solid{background:var(--accent); color:var(--bg)}
-.btn.line{background:transparent; color:var(--accent)}
-.status{font-family:var(--ui); font-size:.9rem; color:var(--muted); min-height:1.2em}
+.points{border-top:1px solid var(--ink)}
+.points > div{display:grid; grid-template-columns:minmax(0,11rem) minmax(0,1fr); gap:8px 32px; padding-block:22px; border-bottom:1px solid var(--rule)}
+.points h3{font-size:1.28rem; line-height:1.3; font-weight:520; letter-spacing:-.005em}
+.points p{color:var(--ink-2); font-size:1.15rem; line-height:1.62}
 
-.disc{font-family:var(--ui); font-size:.95rem; line-height:1.6; color:var(--muted)}
-.disc ul{gap:6px!important}
-.body h2.small{font-family:var(--ui); font-size:.85rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted)}
+.verdict{display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:clamp(24px,4vw,56px); align-items:center}
+.verdict img{width:100%; aspect-ratio:3/4; object-fit:cover}
+.verdict .q{display:flex; flex-direction:column; gap:18px}
+.verdict h2{margin:0!important; font-size:1.15rem; font-style:italic; color:var(--muted); letter-spacing:0}
+.verdict blockquote{margin:0; font-size:clamp(1.7rem,3vw,2.35rem); line-height:1.22; letter-spacing:-.015em; font-weight:380}
 
-.foot{max-width:42rem; margin:48px auto 0; padding-top:18px; border-top:1px solid var(--rule); font-family:var(--ui); font-size:.9rem; color:var(--muted); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px}
+.advice{list-style:none; padding:0; border-top:1px solid var(--ink)}
+.advice li{padding-block:20px; border-bottom:1px solid var(--rule)}
+.advice h3{font-size:1.25rem; font-weight:520; line-height:1.35; margin-bottom:4px}
+.advice p{color:var(--ink-2); font-size:1.15rem; line-height:1.62}
 
-@media (max-width:640px){
-  body{font-size:1.125rem}
-  .head{padding-block:32px 22px}
-  .dek{font-size:1.15rem}
-  .body h2{font-size:1.45rem; margin-top:26px}
-  .photos{grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px}
-  .glance dl{grid-template-columns:minmax(0,1fr)}
-  .glance dt{padding-bottom:0; border-bottom:0}
-  .glance dd{padding-top:2px}
-  .glance dl > dt:nth-last-child(2){border-bottom:0}
+/* write to me */
+.band{background:var(--band); color:var(--band-ink); margin:clamp(72px,10vw,128px) calc(-1*clamp(20px,4vw,48px)) 0; padding:clamp(64px,9vw,112px) clamp(20px,4vw,48px)}
+.band-in{max-width:36rem; margin:0 auto; display:flex; flex-direction:column; gap:22px}
+.band h2{font-size:clamp(2rem,3.6vw,2.75rem); line-height:1.1; letter-spacing:-.018em}
+.band p{color:var(--band-muted); font-size:1.15rem}
+.email{display:flex; flex-wrap:wrap; align-items:baseline; gap:12px 22px; padding-top:6px}
+.email a{font-size:clamp(1.35rem,2.6vw,1.75rem); color:var(--band-ink); text-decoration-color:var(--band-muted); overflow-wrap:anywhere}
+.email a:hover{color:var(--band-ink); text-decoration-color:var(--band-ink)}
+.copy{font:inherit; font-size:1rem; font-style:italic; color:var(--band-muted); background:none; border:0; padding:0; cursor:pointer; text-decoration:underline; text-underline-offset:.18em; text-decoration-thickness:1px}
+.copy:hover{color:var(--band-ink)}
+.status{font-size:.95rem; font-style:italic; color:var(--band-muted); min-height:1.4em}
+
+.small{max-width:36rem; margin:0 auto; padding-block:56px 0; font-size:.95rem; line-height:1.6; color:var(--muted)}
+.small h2{font-size:1rem; font-weight:560; color:var(--ink-2); margin-bottom:10px}
+.small ul{padding-left:1.1em; display:flex; flex-direction:column; gap:6px}
+.foot{max-width:76rem; margin:64px auto 0; padding-block:22px 36px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px 24px; font-size:.95rem; color:var(--muted)}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:minmax(0,1fr); gap:36px; padding-top:40px}
+  .hero-img{margin-inline:calc(-1*clamp(20px,4vw,48px))}
+  .hero-img figcaption{padding-inline:clamp(20px,4vw,48px)}
+  .verdict{grid-template-columns:minmax(0,1fr)}
+  .verdict img{max-width:22rem}
+}
+@media (max-width:600px){
+  body{font-size:1.15rem; line-height:1.66}
+  .mast{padding-top:20px; font-size:.98rem}
+  .dek{font-size:1.18rem}
+  .trio{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .trio > :last-child{grid-column:span 2}
+  .trio > :last-child img{aspect-ratio:4/3}
+  .points > div{grid-template-columns:minmax(0,1fr); gap:4px}
+  .points p,.advice p{font-size:1.08rem}
+  .facts{grid-template-columns:minmax(0,1fr)}
+  .facts dt{padding-bottom:0; padding-right:0; border-bottom:0}
+  .facts dd{padding-top:2px}
 }
 </style>
 </head>
 <body>
-<header class="top">
-  <a class="site" href="#">Interiors Diary <span>by Rudra</span></a>
-  <a class="ask" href="#questions">Ask me a question</a>
+<header class="mast">
+  <a class="name" href="#">Interiors Diary <span>by Rudra</span></a>
+  <a class="write" href="#write">Write to me</a>
 </header>
 
-<article>
-  <div class="head">
-    <h1>Getting my flat’s interiors done in 40 days, without the hassle</h1>
-    <p class="dek">I wanted my flat to look great, and I didn’t want any hassle. Everything I heard said I couldn’t have both. This is what actually happened, what I valued in the person I worked with, what I honestly can’t judge, and what I’d look for if I did it again.</p>
-    <p class="meta">By <b>Rudra</b> · Aparna Zenon, Hyderabad · 12 October 2026 · 5 min read</p>
+<main>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Getting my flat’s interiors done in forty days, without the hassle</h1>
+      <p class="dek">I wanted my flat to look great, and I didn’t want any hassle. Everything I heard said I couldn’t have both. This is what actually happened, what I valued in the person I worked with, what I honestly can’t judge, and what I’d look for if I did it again.</p>
+      <p class="byline">By <b>Rudra</b>, Aparna Zenon, Hyderabad<br>October 2026, a five-minute read</p>
+    </div>
+    <figure class="hero-img">
+      <img src="p2.jpg" alt="Living room with a ring chandelier, linear profile lights in the false ceiling and a panelled TV wall" fetchpriority="high">
+      <figcaption>The living room, with profile lights in the false ceiling and a panelled TV wall.</figcaption>
+    </figure>
   </div>
 
-  <figure class="film">
-    <video src="tour.mp4" poster="p2.jpg" controls muted playsinline preload="metadata" aria-label="Walkthrough video of the finished flat"></video>
-    <figcaption>A 50-second walkthrough of the finished flat (no sound).</figcaption>
-  </figure>
-
-  <div class="body">
-    <h2>The flat</h2>
+  <article class="story">
+    <h2 style="margin-top:0">The flat</h2>
     <p>I bought a 2 BHK in Aparna Zenon, Hyderabad. My first idea was to sell it. Over time I changed my mind and decided to keep it and live in it myself.</p>
     <p>It’s above the 20th floor and faces east. The view is excellent, there’s plenty of air and light, and the balcony is lovely.</p>
     <p>Once I decided to move in, two things mattered to me. I wanted the flat to look really good. And I didn’t want any hassle at all.</p>
+    <dl class="facts">
+      <dt>Home</dt><dd>2 BHK, Aparna Zenon, Hyderabad</dd>
+      <dt>Floor and facing</dt><dd>Above the 20th floor, east facing</dd>
+      <dt>Scope</dt><dd>Complete interiors</dd>
+      <dt>Time taken</dt><dd>40 days, end to end</dd>
+      <dt>How I found them</dt><dd>A recommendation in a group I’m part of</dd>
+    </dl>
 
-    <div class="glance">
-      <h3>At a glance</h3>
-      <dl>
-        <dt>Home</dt><dd>2 BHK, Aparna Zenon, Hyderabad</dd>
-        <dt>Floor and facing</dt><dd>Above the 20th floor, east facing</dd>
-        <dt>Scope</dt><dd>Complete interiors</dd>
-        <dt>Time taken</dt><dd>40 days, end to end</dd>
-        <dt>How I found them</dt><dd>A recommendation in a group I’m part of</dd>
-      </dl>
-    </div>
+    <figure class="wide">
+      <div class="pair">
+        <img src="p1.jpg" alt="Hall seen from the entrance, with glossy floor tiles and ceiling profile lights" loading="lazy">
+        <img src="p8.jpg" alt="False ceiling with linear profile lights and a ring chandelier" loading="lazy">
+      </div>
+      <figcaption>The hall from the entrance, and the false ceiling above it.</figcaption>
+    </figure>
 
     <h2>What I heard before starting</h2>
-    <p>Before choosing anyone, I asked around and read about other people’s experiences. The picture wasn’t encouraging:</p>
-    <ul>
+    <p>Before choosing anyone, I asked around and read about other people’s experiences. The picture wasn’t encouraging.</p>
+    <ul class="heard">
       <li>Interior firms are very good at sales. They say a lot and show impressive designs, but often under-deliver.</li>
       <li>They quote one to two months and take three to four.</li>
       <li>Getting close to what you imagined is rare. Something is usually off in colour, quality or design.</li>
@@ -171,104 +210,105 @@ dialog button{font:600 .9rem var(--ui); background:#fff; color:#111; border:0; b
 
     <h2>What actually happened</h2>
     <p>I found the firm through a recommendation in a group I’m part of, and gave them the complete interior work. The project was done end to end in 40 days. Execution was smooth, without hiccups or unnecessary delays, and the team was professional and well coordinated.</p>
+
+    <figure class="film">
+      <video src="tour.mp4" poster="poster.jpg" controls muted playsinline preload="metadata" aria-label="Walkthrough video of the finished flat"></video>
+      <figcaption>A fifty-second walkthrough of the finished flat, without sound.</figcaption>
+    </figure>
+
     <p>The 40 days stands out, but there was more to it than speed. These are the things that stood out to me about the person who ran our project.</p>
 
     <h2>What I liked</h2>
-    <p><b>He was honest from day one.</b> At the start, I didn’t fully believe what he told me. Looking back, he was honest about all of it.</p>
-    <p><b>He thinks like an owner, not a salesman.</b> He doesn’t come across as commercial. He owns several flats himself that he has rented out, so he knows what a home actually needs and what it doesn’t. He won’t do something that profits him if it would hurt us later.</p>
-    <p><b>He has real taste.</b> He has excellent taste and high standards when visualising a space. I was sceptical from day one, and honestly, I don’t have much confidence in my own taste. But I trusted him on this.</p>
-    <p><b>His guidance was clear.</b> He was clear in what he said from the first day, and his suggestions were sound.</p>
-    <p><b>Execution was fast.</b> On speed, it was excellent: 40 days from start to finish.</p>
+    <div class="points">
+      <div><h3>Honest from day one</h3><p>At the start, I didn’t fully believe what he told me. Looking back, he was honest about all of it.</p></div>
+      <div><h3>Thinks like an owner</h3><p>He doesn’t come across as commercial. He owns several flats himself that he has rented out, so he knows what a home actually needs and what it doesn’t. He won’t do something that profits him if it would hurt us later.</p></div>
+      <div><h3>Real taste</h3><p>He has excellent taste and high standards when visualising a space. I was sceptical from day one, and honestly, I don’t have much confidence in my own taste. But I trusted him on this.</p></div>
+      <div><h3>Clear guidance</h3><p>He was clear in what he said from the first day, and his suggestions were sound.</p></div>
+      <div><h3>Fast execution</h3><p>On speed, it was excellent: 40 days from start to finish.</p></div>
+    </div>
+
+    <figure class="wide">
+      <div class="trio">
+        <img src="p3.jpg" alt="Kitchen with dark countertop and glass-front upper cabinets" loading="lazy">
+        <img src="p4.jpg" alt="Wash basin vanity with a backlit oval mirror" loading="lazy">
+        <img src="p6.jpg" alt="Tall cabinet with fluted glass doors and lit side niches" loading="lazy">
+      </div>
+      <figcaption>The kitchen, the vanity with its backlit mirror, and a fluted-glass unit with lit niches.</figcaption>
+    </figure>
 
     <h2>What I can’t fully judge</h2>
     <p>I’d rather be upfront about two things.</p>
-    <p><b>Cost.</b> I’m not certain here. Compared with the others I looked at, the pricing felt reasonable at the time.</p>
-    <p><b>Material quality.</b> Visually, the result is excellent. Whether every material is top quality, I honestly can’t say. That isn’t a doubt about the work. I just don’t have the expertise to judge materials. If it helps, I can share the names of the material brands that were used.</p>
+    <div class="points">
+      <div><h3>Cost</h3><p>I’m not certain here. Compared with the others I looked at, the pricing felt reasonable at the time.</p></div>
+      <div><h3>Material quality</h3><p>Visually, the result is excellent. Whether every material is top quality, I honestly can’t say. That isn’t a doubt about the work. I just don’t have the expertise to judge materials. If it helps, I can share the names of the material brands that were used.</p></div>
+    </div>
 
-    <h2>Would I hire him again?</h2>
-    <p class="note">Yes. If I have another flat in the future, I’d go with him for sure.</p>
+    <div class="wide verdict">
+      <img src="p5.jpg" alt="Recessed lit niche with a hanging brass bell" loading="lazy">
+      <div class="q">
+        <h2>Would I hire him again?</h2>
+        <blockquote>Yes. If I have another flat in the future, I’d go with him for sure.</blockquote>
+      </div>
+    </div>
 
-    <h2>The finished flat</h2>
-    <p>A few stills from the walkthrough. Tap any photo to see it larger.</p>
-  </div>
-</article>
-
-<div class="photos" id="photos">
-  <figure><button type="button" data-src="p2.jpg" data-cap="Living room"><img src="p2.jpg" alt="Living room with a ring chandelier, ceiling profile lights and a grey panelled TV wall" loading="lazy"></button><figcaption>Living room</figcaption></figure>
-  <figure><button type="button" data-src="p1.jpg" data-cap="Hall, from the entrance"><img src="p1.jpg" alt="Hall seen from the entrance, with glossy floor tiles" loading="lazy"></button><figcaption>Hall, from the entrance</figcaption></figure>
-  <figure><button type="button" data-src="p3.jpg" data-cap="Kitchen"><img src="p3.jpg" alt="Kitchen with dark countertop and glass-front upper cabinets" loading="lazy"></button><figcaption>Kitchen</figcaption></figure>
-  <figure><button type="button" data-src="p8.jpg" data-cap="False ceiling with profile lights"><img src="p8.jpg" alt="False ceiling with linear profile lights and a ring chandelier" loading="lazy"></button><figcaption>False ceiling</figcaption></figure>
-  <figure><button type="button" data-src="p4.jpg" data-cap="Vanity with a backlit mirror"><img src="p4.jpg" alt="Wash basin vanity with a backlit oval mirror" loading="lazy"></button><figcaption>Vanity</figcaption></figure>
-  <figure><button type="button" data-src="p6.jpg" data-cap="Unit with fluted-glass doors"><img src="p6.jpg" alt="Tall cabinet with fluted glass doors and lit side niches" loading="lazy"></button><figcaption>Fluted-glass unit</figcaption></figure>
-  <figure><button type="button" data-src="p9.jpg" data-cap="Arched display unit"><img src="p9.jpg" alt="Arched display unit with glass-front shelves" loading="lazy"></button><figcaption>Arched display unit</figcaption></figure>
-  <figure><button type="button" data-src="p7.jpg" data-cap="Bedroom wardrobe"><img src="p7.jpg" alt="Full-height wardrobe with long black handles" loading="lazy"></button><figcaption>Wardrobe</figcaption></figure>
-  <figure><button type="button" data-src="p5.jpg" data-cap="Lit niche with a brass bell"><img src="p5.jpg" alt="Recessed lit niche with a hanging brass bell" loading="lazy"></button><figcaption>Niche</figcaption></figure>
-</div>
-
-<dialog id="lb" aria-label="Enlarged photo">
-  <img id="lbimg" alt="">
-  <form method="dialog"><span id="lbcap"></span><button type="submit">Close</button></form>
-</dialog>
-
-<article>
-  <div class="body">
     <h2>If you’re about to start</h2>
     <p>This is what I’d pay attention to, based on my own experience. It isn’t professional advice. It’s what I’d tell a friend.</p>
-    <ol>
-      <li><b>Notice who tells you what you don’t need.</b> Someone who talks you out of unnecessary work is usually thinking about your home, not their bill.</li>
-      <li><b>Check early promises with past clients.</b> Ask people who have already worked with them whether what they were told at the start held up.</li>
-      <li><b>See finished homes, not just designs.</b> If you’re unsure of your own taste, like me, a finished home is the best way to decide whose taste to trust.</li>
-      <li><b>Get the timeline and payment stages in writing.</b> Link payments to visible progress rather than paying most of it upfront.</li>
-      <li><b>List materials and brands in the quote.</b> This matters most if, like me, you can’t judge materials yourself.</li>
-      <li><b>Keep the final payment for the snag list.</b> Walk through the finished flat together, and release the last amount once everything on the list is fixed.</li>
-    </ol>
+    <ul class="advice">
+      <li><h3>Notice who tells you what you don’t need</h3><p>Someone who talks you out of unnecessary work is usually thinking about your home, not their bill.</p></li>
+      <li><h3>Check early promises with past clients</h3><p>Ask people who have already worked with them whether what they were told at the start held up.</p></li>
+      <li><h3>See finished homes, not just designs</h3><p>If you’re unsure of your own taste, like me, a finished home is the best way to decide whose taste to trust.</p></li>
+      <li><h3>Get the timeline and payment stages in writing</h3><p>Link payments to visible progress rather than paying most of it upfront.</p></li>
+      <li><h3>List materials and brands in the quote</h3><p>This matters most if, like me, you can’t judge materials yourself.</p></li>
+      <li><h3>Keep the final payment for the snag list</h3><p>Walk through the finished flat together, and release the last amount once everything on the list is fixed.</p></li>
+    </ul>
 
-    <h2 id="questions">Questions?</h2>
-    <div class="contact">
-      <p>If you’re planning interiors in Aparna Zenon or elsewhere in Hyderabad and want to know more, email me. I’m happy to share what I know, including the material brands used in my flat.</p>
-      <div class="mail">
-        <span class="addr" id="addr">rudramaisur@gmail.com</span>
-        <button class="btn solid" type="button" id="copy">Copy email</button>
-        <a class="btn line" href="mailto:rudramaisur@gmail.com?subject=Question%20about%20your%20interiors">Send email</a>
+    <figure class="wide">
+      <div class="pair">
+        <img src="p9.jpg" alt="Arched display unit with glass-front shelves" loading="lazy">
+        <img src="p7.jpg" alt="Full-height wardrobe with long black handles" loading="lazy">
+      </div>
+      <figcaption>The arched display unit, and a full-height bedroom wardrobe.</figcaption>
+    </figure>
+  </article>
+
+  <section class="band" id="write" aria-labelledby="write-h">
+    <div class="band-in">
+      <h2 id="write-h">Planning your own interiors?</h2>
+      <p>If you’re in Aparna Zenon or elsewhere in Hyderabad and want to know more, write to me. I’m happy to share what I know, including the material brands used in my flat.</p>
+      <div class="email">
+        <a href="mailto:rudramaisur@gmail.com?subject=Question%20about%20your%20interiors" id="addr">rudramaisur@gmail.com</a>
+        <button class="copy" type="button" id="copy">Copy address</button>
       </div>
       <p class="status" id="status" role="status" aria-live="polite"></p>
     </div>
+  </section>
 
-    <h2 class="small">Disclaimer</h2>
-    <div class="disc">
-      <ul>
-        <li>I’m not an interiors or materials expert, and nothing here is professional advice.</li>
-        <li>The concerns under “What I heard before starting” are what other people told me. They describe the industry in general, not any specific firm.</li>
-        <li>Every project is different. Timelines, cost and quality depend on scope, materials, the site and the people involved. My experience is not a guarantee for anyone else.</li>
-        <li>Please do your own checks before hiring anyone.</li>
-        <li>The video and photos are of my own flat.</li>
-        <li>Accurate to my knowledge as of October 2026.</li>
-      </ul>
-    </div>
-  </div>
-</article>
+  <section class="small" aria-labelledby="disc-h">
+    <h2 id="disc-h">Disclaimer</h2>
+    <ul>
+      <li>I’m not an interiors or materials expert, and nothing here is professional advice.</li>
+      <li>The concerns under “What I heard before starting” are what other people told me. They describe the industry in general, not any specific firm.</li>
+      <li>Every project is different. Timelines, cost and quality depend on scope, materials, the site and the people involved. My experience is not a guarantee for anyone else.</li>
+      <li>Please do your own checks before hiring anyone.</li>
+      <li>The video and photos are of my own flat.</li>
+      <li>Accurate to my knowledge as of October 2026.</li>
+    </ul>
+  </section>
+</main>
 
 <footer class="foot">
-  <span>Interiors Diary by Rudra</span>
-  <span>Hyderabad · 2026</span>
+  <span>Interiors Diary, by Rudra</span>
+  <span>Hyderabad, 2026</span>
 </footer>
 
 <script>
 (function(){
-  var lb = document.getElementById('lb'), lbimg = document.getElementById('lbimg'), lbcap = document.getElementById('lbcap');
-  document.getElementById('photos').addEventListener('click', function(e){
-    var b = e.target.closest('button'); if (!b) return;
-    lbimg.src = b.dataset.src; lbimg.alt = b.dataset.cap; lbcap.textContent = b.dataset.cap;
-    if (lb.showModal) lb.showModal(); else lb.setAttribute('open','');
-  });
-  lb.addEventListener('click', function(e){ if (e.target === lb) lb.close(); });
-
-  var st = document.getElementById('status'), addr = document.getElementById('addr');
+  var st = document.getElementById('status');
   document.getElementById('copy').addEventListener('click', function(){
     var text = 'rudramaisur@gmail.com';
-    function fallback(){ var r = document.createRange(); r.selectNodeContents(addr); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
-      st.textContent = 'Email selected. Press Ctrl+C or Cmd+C to copy it.'; }
-    try { navigator.clipboard.writeText(text).then(function(){ st.textContent = 'Copied.'; }, fallback); } catch(e){ fallback(); }
+    function fallback(){ var r = document.createRange(); r.selectNodeContents(document.getElementById('addr')); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      st.textContent = 'Address selected. Press Ctrl+C or Cmd+C to copy it.'; }
+    try { navigator.clipboard.writeText(text).then(function(){ st.textContent = 'Address copied.'; }, fallback); } catch(e){ fallback(); }
   });
 })();
 </script>

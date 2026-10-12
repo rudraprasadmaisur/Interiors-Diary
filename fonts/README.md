@@ -1,1 +1,1 @@
-Bodoni Moda and Hanken Grotesk are licensed under the SIL Open Font License 1.1 (via Fontsource).
+Literata and Source Sans 3 are licensed under the SIL Open Font License 1.1 (via Fontsource).
